@@ -6,6 +6,10 @@ body {
 }
 
 
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
 
 
 a {
@@ -40,11 +44,6 @@ h2 {
 }
 
 h3{
-    margin: 0px;
-}
-
-.small{
-    font-size:      10px;
     margin: 0px;
 }
 

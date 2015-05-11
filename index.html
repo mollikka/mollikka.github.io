@@ -101,9 +101,9 @@
 
         <header>
             <h3>Bachelor's thesis: Strategies in the game Cordial Minuet</h3>
-            <span class="small">Aalto University, Computer Science</span>
         </header>
         <p>
+        I did my Bachelor's thesis in Computer Science at Aalto University.
         I analyzed
         <a href="http://cordialminuet.com/"><strong>Cordial Minuet</strong></a>
         as a zero-sum game and looked for
@@ -153,8 +153,11 @@
         </p>
         <div id="blog-posts">
             <h3>Latest blog posts</h3>
+            <ul>
             
+            </ul>
         </div>
+
         <script>
         $.get("https://mollikka.github.io/blog/rss.xml", function (data) {
         $(data).find("item:lt(4)").each(function () {
@@ -165,10 +168,9 @@
             var date = new Date(el.find("pubDate").text());
             var datestring = date.toLocaleDateString();
 
-            $("#blog-posts").append("<p><a href="+address+">"+title+"</a> - "+datestring+"</p>")
+            $("#blog-posts ul").append("<li><a href="+address+">"+title+"</a> - "+datestring+"</li>")
         })});
         </script>
-        
     </section>
 
     <section>
