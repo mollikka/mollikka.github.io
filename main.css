@@ -5,6 +5,11 @@ body {
     color:          #FFFFFF;
 }
 
+[class*='col-'] {
+    padding-right:5px;
+    padding-left:5px;
+}
+
 figure {
     float: left;
     height: auto;
