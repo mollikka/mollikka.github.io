@@ -165,25 +165,23 @@
             <em>It's okay if something useful comes out of it, but that's never the
             point.</em>
         </p>
-        <div id="blog-posts">
-            <h3>Latest blog posts</h3>
-            <ul>
-            
-            </ul>
-        </div>
+        <div id="blog-posts"></div>
 
         <script>
-        $.get("https://mollikka.github.io/blog/rss.xml", function (data) {
-        $(data).find("item:lt(4)").each(function () {
-            var el = $(this);
+            $.get("https://mollikka.github.io/blog/rss.xml", function (data) {
+            $("#blog-posts").append("<h3>Latest blog posts</h3>");
+            $("#blog-posts").append("<ul></ul>");
 
-            var title = el.find("title").text();
-            var address = el.find("link").text();
-            var date = new Date(el.find("pubDate").text());
-            var datestring = date.toLocaleDateString();
 
-            $("#blog-posts ul").append("<li><a href="+address+">"+title+"</a> - "+datestring+"</li>")
-        })});
+            $(data).find("item:lt(4)").each(function () {
+                var el = $(this);
+
+                var title = el.find("title").text();
+                var address = el.find("link").text();
+                var date = new Date(el.find("pubDate").text());
+                var datestring = date.toLocaleDateString();
+                $("#blog-posts ul").append("<li><a href="+address+">"+title+"</a> - "+datestring+"</li>");
+            })});
         </script>
     </section>
 
