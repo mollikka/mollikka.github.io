@@ -121,6 +121,20 @@ blockquote cite {
     text-align: center;
 }
 
+.decoration_anchor{
+    position:relative;
+}
+#decoration1{
+    position:absolute;
+    width: 400px;
+    height: 160px;
+    left: -389px;
+    top: -20px;
+    background-image:url("images/decoration1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
 .flickr_badge_image {
     display:        inline-block;
     width:          75px;
