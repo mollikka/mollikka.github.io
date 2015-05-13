@@ -24,8 +24,6 @@ figure {
 }
 
 img {
-    height: auto;
-    width: auto;
     border:                 1px solid #bbbbbb;
     box-shadow:             2px 2px 5px #111111;
 }
@@ -72,6 +70,7 @@ h3{
 }
 
 section {
+    overflow:auto;
     width: 100%;
     background-color: #333333;
 
