@@ -14,18 +14,13 @@ figure {
     float: left;
     height: auto;
     width: auto;
-    background-color: #2e3436;
-    background-image:url("images/bg.png");
-    border:                 1px solid #bbbbbb;
-    padding:        10px;
     margin: 5px;
 
     box-shadow:             2px 2px 5px #111111 inset;
 }
 
 figure img {
-    border:                 1px solid #bbbbbb;
-    box-shadow:             2px 2px 5px #111111;
+    border: 1px solid #777777;
 }
 
 ul {
