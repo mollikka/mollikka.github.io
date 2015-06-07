@@ -23,7 +23,7 @@ figure {
     box-shadow:             2px 2px 5px #111111 inset;
 }
 
-img {
+figure img {
     border:                 1px solid #bbbbbb;
     box-shadow:             2px 2px 5px #111111;
 }
@@ -112,12 +112,6 @@ blockquote cite {
     text-align:     right;
 }
 
-#flickr_gallery {
-    margin:0 auto;
-    width: 100%;
-    text-align: center;
-}
-
 #some-menu {
     text-align: center;
 }
@@ -136,15 +130,18 @@ blockquote cite {
     background-position: right center;
 }
 
-.flickr_badge_image {
-    display:        inline-block;
-    width:          75px;
-    height:         75px;
-    margin:         2px 4px;
+.math {
+    font-family :   Verdana, Arial, Sans-serif;
+    font-style: italic;
 }
 
-.flickr_badge_image img {
-    float: left;
+.flickr_badge_image,.art_image {
+    float:          left;
+    margin:         4px;
+    padding: 0px;
     border: 1px solid #777777;
 }
 
+(.flickr_badge_image,.art_image) img {
+    float: left;
+}
