@@ -5,6 +5,11 @@ body {
     color:          #FFFFFF;
 }
 
+p {
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+}
+
 [class*='col-'] {
     padding-right:5px;
     padding-left:5px;
