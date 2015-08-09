@@ -1,9 +1,44 @@
+body { color: #222222; }
+a:link, a:visited, a:hover, a:active  { color:   #000000; }
+body { background-color: #fdf6e3; }
+section { background-color: #CCBF9B;}
+footer {color:          #CCCCCC;}
+a {background-color: #d7dcea;}
+
+
+
+a,img {
+    transition: border-radius 0.5s ease-in-out; 
+                
+}
+
+a {
+white-space: nowrap;
+}
+
 body {
     font-family :   Verdana, Arial, Sans-serif;
-    background-color: #2e3436;
-    background-image:url("images/bg.png");
-    color:          #FFFFFF;
 }
+
+a img {
+    border-radius: 38px;
+}
+
+a img:hover {
+    border-radius: 0px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+a:link, a:visited {
+    border-radius: 10px;
+}
+a:hover, a:active {
+    border-radius: 0px;
+}
+
+
 
 p {
     margin-top: 0em;
@@ -20,32 +55,11 @@ figure {
     height: auto;
     width: auto;
     margin: 5px;
-
-    box-shadow:             2px 2px 5px #111111 inset;
-}
-
-figure img {
-    border: 1px solid #777777;
 }
 
 ul {
     list-style: none;
     padding-left: 0px;
-}
-
-
-a {
-    color:          #72CFA3;
-}
-a:visited {
-    color:          #72CFA3;
-}
-
-a:hover {
-    color:          #6699FF;
-}
-a:visited:hover {
-    color:          #6699FF;
 }
 
 .fa {
@@ -54,10 +68,7 @@ a:visited:hover {
     text-align: center;
 }
 
-
-
-
-header{
+header {
     clear: both;
 }
 
@@ -65,7 +76,7 @@ h2 {
     margin: 3px;
 }
 
-h3{
+h3 {
     font-size: 21px;
     margin: 0px;
 }
@@ -73,61 +84,18 @@ h3{
 section {
     overflow:hidden;
     width: 100%;
-    background-color: #333333;
 
-    border:                 1px solid #bbbbbb;
-    box-shadow:             2px 2px 5px #111111;
     padding:        10px;
     margin: 10px;
     word-wrap: break-word;
 }
 
-#banner {
-    border:                 1px solid #bbbbbb;
-    box-shadow:             2px 2px 5px #111111;
-}
-
 footer {
     text-align: center;
-    color:          #CCCCCC;
-}
-
-
-
-#quotebox {
-}
-
-blockquote {
-    font-family:    Georgia, Verdana, Arial, Sans-serif;
-    font-size:      18px;
-    font-style:     italic;
-    line-height:    1;
-    color:          #FFFFFF;
-}
-
-blockquote cite {
-    color:          #EEEEEE;
-    font-size:      12px;
-    display:        block;
-    text-align:     right;
 }
 
 #some-menu {
     text-align: center;
-}
-
-.decoration_anchor{
-    position:relative;
-}
-#decoration1{
-    position:absolute;
-    width: 400px;
-    height: 160px;
-    left: -389px;
-    top: -20px;
-    background-image:url("images/decoration1.png");
-    background-repeat: no-repeat;
-    background-position: right center;
 }
 
 .math {
@@ -135,13 +103,11 @@ blockquote cite {
     font-style: italic;
 }
 
+    
 .flickr_badge_image,.art_image {
     float:          left;
-    margin:         4px;
+    margin:         5px;
     padding: 0px;
-    border: 1px solid #777777;
 }
 
-(.flickr_badge_image,.art_image) img {
-    float: left;
-}
+
