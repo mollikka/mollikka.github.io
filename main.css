@@ -1,75 +1,11 @@
-body { color: #222222; }
-a:link, a:visited, a:hover, a:active  { color:   #000000; }
-body { background-color: #fdf6e3; }
-section { background-color: #CCBF9B;}
-footer {color:          #CCCCCC;}
-a {background-color: #d7dcea;}
-
-
-
-a,img {
-    transition: border-radius 0.5s ease-in-out; 
-                
-}
-
-a {
-white-space: nowrap;
-}
-
+/*text styles*/
 body {
     font-family :   Verdana, Arial, Sans-serif;
 }
 
-a img {
-    border-radius: 38px;
-}
-
-a img:hover {
-    border-radius: 0px;
-}
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-}
-a:link, a:visited {
-    border-radius: 10px;
-}
-a:hover, a:active {
-    border-radius: 0px;
-}
-
-
-
 p {
     margin-top: 0em;
     margin-bottom: 0.5em;
-}
-
-[class*='col-'] {
-    padding-right:5px;
-    padding-left:5px;
-}
-
-figure {
-    float: left;
-    height: auto;
-    width: auto;
-    margin: 5px;
-}
-
-ul {
-    list-style: none;
-    padding-left: 0px;
-}
-
-.fa {
-    width: 50px;
-    height: 30px;
-    text-align: center;
-}
-
-header {
-    clear: both;
 }
 
 h2 {
@@ -81,6 +17,20 @@ h3 {
     margin: 0px;
 }
 
+footer {
+    text-align: center;
+}
+
+.math {
+    font-family :   Verdana, Arial, Sans-serif;
+    font-style: italic;
+}
+
+/*layout*/
+header {
+    clear: both;
+}
+
 section {
     overflow:hidden;
     width: 100%;
@@ -90,24 +40,74 @@ section {
     word-wrap: break-word;
 }
 
-footer {
+figure {
+    float: left;
+    height: auto;
+    width: auto;
+    margin: 5px;
+}
+
+[class*='col-'] {
+    padding-right:5px;
+    padding-left:5px;
+}
+
+
+/*colors*/
+body { color: #352A25; }
+a:link, a:visited, a:hover, a:active  { color:   #1d3038; }
+body { background-color: #D1C5B4; }
+section { background-color: #D8B589;}
+footer {color:          #CCCCCC;}
+a {background-color: #D1C5B4;}
+a {box-shadow: 0px 0px 4px #000000;}
+
+/*cool expanding effect*/
+a img {
+    transition: border-radius 0.5s ease-in-out;                
+}
+a img {
+    border-radius: 38px;
+}
+a img:hover {
+    border-radius: 0px;
+}
+
+/*text links style*/
+a {
+    white-space: nowrap;
+    border-radius: 10px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+/*blog*/
+#blog-posts ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*font awesome icons*/
+.fa {
+    width: 50px;
+    height: 30px;
     text-align: center;
 }
 
+/*social media buttons*/
 #some-menu {
     text-align: center;
 }
-
-.math {
-    font-family :   Verdana, Arial, Sans-serif;
-    font-style: italic;
+#some-menu a{
 }
 
-    
+/*flicr gallery*/
 .flickr_badge_image,.art_image {
     float:          left;
     margin:         5px;
-    padding: 0px;
+    padding:        0px;
 }
 
 
