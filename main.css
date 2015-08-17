@@ -34,9 +34,8 @@ header {
 section {
     overflow:hidden;
     width: 100%;
-
     padding:        10px;
-    margin: 10px;
+    margin: 10px 0px; 
     word-wrap: break-word;
 }
 
