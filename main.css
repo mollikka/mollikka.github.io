@@ -117,9 +117,12 @@ p a:link, p a:visited, p a:hover, p a:active {
 } 
 
 /*flicr gallery*/
+.gallery,#flickr_gallery {
+    float: left;
+    width: 100%;
+}
 .flickr_badge_image,.art_image {
     float:          left;
     margin:         5px;
     padding:        0px;
 }
-
