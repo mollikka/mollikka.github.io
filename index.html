@@ -193,41 +193,6 @@
 <div class="col-md-6">
 
     <section>
-        <h2>
-            <span class="fa fa-newspaper-o"></span>
-            Blog
-        </h2>
-
-        <figure style="float: right;">
-            <img src="images/1995.jpg"/>
-        </figure>
-        
-        <p>
-            I'm not a blogger but if I feel like writing a few
-            paragraphs it goes on a page called
-            <a href="https://mollikka.github.io/blog">blog</a>.
-        </p>
-        <div id="blog-posts"></div>
-
-        <script>
-            $.get("https://mollikka.github.io/blog/rss.xml", function (data) {
-            $("#blog-posts").append("<h3>Latest blog posts</h3>");
-            $("#blog-posts").append("<ul></ul>");
-
-
-            $(data).find("item:lt(4)").each(function () {
-                var el = $(this);
-
-                var title = el.find("title").text();
-                var address = el.find("link").text();
-                var date = new Date(el.find("pubDate").text());
-                var datestring = date.toLocaleDateString();
-                $("#blog-posts ul").append("<li><a href="+address+">"+title+"</a> - "+datestring+"</li>");
-            })});
-        </script>
-    </section>
-
-    <section>
         <h2><span class="fa fa-paper-plane"></span>Product Design</h2>
         <p>
             3D printing has allowed many new people to try designing everyday
